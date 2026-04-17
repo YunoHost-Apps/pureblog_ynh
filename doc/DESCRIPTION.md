@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Pure Blog is a simple, flat‑file blogging platform with a Markdown‑first editor and a lightweight admin area. It stores posts and pages as Markdown files on disk—no database required.
