@@ -38,8 +38,8 @@ ynh_config_add_nginx
 ynh_script_progression "Setting up application with CURL..."
 
 # Installation with cURL
-#ynh_local_curl "/setup.php?submit" \
-#    "language=Français" "site_title=YunoHost" "site_tagline=Blogging platform, designed for personal use" "base_url=$domain" "admin_username=$admin" "password=$password" "confirm_password=$password"
+ynh_local_curl "/setup.php?submit" \
+    "language=Français" "site_title=YunoHost" "site_tagline=Blogging platform, designed for personal use" "base_url=https://$domain" "admin_username=$admin" "password=$password" "confirm_password=$password"
 
 #=================================================
 # END OF SCRIPT
