@@ -1,0 +1,74 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "pureblog"
+name = "PureBlog"
+description.en = "Blogging platform, designed for personal use"
+description.fr = "Plateforme de blog, conçue pour un usage personnel"
+
+version = "2.4.3~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "free"
+website = "https://pureblog.org/"
+demo = "https://demo.example.com"
+admindoc = "https://pureblog.org/docs"
+code = "https://github.com/kevquirk/pureblog/"
+
+[integration]
+yunohost = ">= 12.1.39"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    #[install.path]
+    #type = "path"
+    #default = "/example"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    #[install.admin]
+    #type = "user"
+
+    #[install.password]
+    #help.en = "Use the help field to add an information for the admin about this question."
+    #help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
+    #type = "password"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v2.4.3.tar.gz"
+    sha256 = "519711a4a0c5dc72c3c6b5c4d438db50fd20380ff55b9c1825d4195046a21dc0"
+
+    autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    #[resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "php8.5-mbstring, php8.5-curl, php8.5-zip"
