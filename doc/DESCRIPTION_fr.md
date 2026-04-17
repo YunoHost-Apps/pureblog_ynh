@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+PureBlog est une plateforme de blog simple, fonctionnant avec des fichiers "flat‑file", dotée d'un éditeur privilégiant le Markdown et d'un espace d'administration léger. Elle stocke les articles et les pages sous forme de fichiers Markdown sur le disque dur — aucune base de données n'est nécessaire.
