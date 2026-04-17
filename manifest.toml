@@ -14,7 +14,6 @@ maintainers = ["eric_G"]
 [upstream]
 license = "free"
 website = "https://pureblog.org/"
-demo = "https://demo.example.com"
 admindoc = "https://pureblog.org/docs"
 code = "https://github.com/kevquirk/pureblog/"
 
@@ -37,7 +36,7 @@ ram.runtime = "50M"
 
     #[install.path]
     #type = "path"
-    #default = "/example"
+    #default = "/pureblog"
 
     [install.init_main_permission]
     type = "group"
@@ -64,9 +63,8 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
-
-    #[resources.data_dir]
-
+    group = "www-data:r-x"
+    
     [resources.permissions]
     main.url = "/"
 
