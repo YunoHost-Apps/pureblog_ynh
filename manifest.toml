@@ -42,6 +42,11 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
+    [install.title]
+    ask.en = "Choose title for your blog"
+    ask.fr = "Choisissez un titre pour votre blog"
+    type = "string"
+
     [install.language]
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
@@ -71,7 +76,7 @@ ram.runtime = "50M"
 
     [resources.install_dir]
     group = "www-data:r-x"
-    
+
     [resources.permissions]
     main.url = "/"
 
