@@ -39,7 +39,7 @@ ynh_script_progression "Setting up application with CURL..."
 
 # Installation with cURL
 ynh_local_curl "/setup.php?submit" \
-    "language=$language" "site_title=$title" "site_tagline=" "base_url=https://$domain" "admin_username=$admin" "password=$password" "confirm_password=$password"
+    "language=$language" "site_title=$title" "site_tagline=" "base_url=https://$domain$path" "admin_username=$admin" "password=$password" "confirm_password=$password"
 
 #=================================================
 # END OF SCRIPT
