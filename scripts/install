@@ -22,13 +22,6 @@ ynh_script_progression "Setting up source files..."
 ynh_setup_source --dest_dir="$install_dir"
 
 #=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
-#ynh_script_progression "Adding $app's configuration files..."
-
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
-
-#=================================================
 # SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
@@ -45,8 +38,8 @@ ynh_config_add_nginx
 ynh_script_progression "Setting up application with CURL..."
 
 # Installation with cURL
-#ynh_local_curl "/setup.php?submit" \
-#    "language=fr" "site_title=YunoHost" "site_tagline=" "base_url=$domain" "admin_username=$admin" "password=$password" "confirm_password=$password"
+ynh_local_curl "/setup.php?submit" \
+    "language=$language" "site_title=$title" "site_tagline=" "base_url=https://$domain$path" "admin_username=$admin" "password=$password" "confirm_password=$password"
 
 #=================================================
 # END OF SCRIPT
