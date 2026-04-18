@@ -7,7 +7,7 @@ name = "PureBlog"
 description.en = "Blogging platform, designed for personal use"
 description.fr = "Plateforme de blog, conçue pour un usage personnel"
 
-version = "2.4.3~ynh1"
+version = "2.4.3~ynh2"
 
 maintainers = ["eric_G"]
 
