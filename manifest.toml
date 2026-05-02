@@ -12,7 +12,7 @@ version = "2.4.9~ynh1"
 maintainers = ["eric_G"]
 
 [upstream]
-license = "free"
+license = "LicenseRef-Pure-Blog-1"
 website = "https://pureblog.org/"
 admindoc = "https://pureblog.org/docs"
 code = "https://github.com/kevquirk/pureblog/"
