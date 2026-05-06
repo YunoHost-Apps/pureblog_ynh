@@ -13,6 +13,7 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "LicenseRef-Pure-Blog-1"
+license_url = "https://github.com/kevquirk/pureblog/?tab=License-1-ov-file"
 website = "https://pureblog.org/"
 admindoc = "https://pureblog.org/docs"
 code = "https://github.com/kevquirk/pureblog/"
