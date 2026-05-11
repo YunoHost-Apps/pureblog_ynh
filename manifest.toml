@@ -13,10 +13,10 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "LicenseRef-Pure-Blog-1"
-license_url = "https://github.com/kevquirk/pureblog/?tab=License-1-ov-file"
+license_url = "https://codeberg.org/kevquirk/pureblog/src/branch/main/LICENSE.md"
 website = "https://pureblog.org/"
 admindoc = "https://pureblog.org/docs"
-code = "https://github.com/kevquirk/pureblog/"
+code = "https://codeberg.org/kevquirk/pureblog"
 
 [integration]
 yunohost = ">= 12.1.39"
@@ -59,7 +59,7 @@ ram.runtime = "50M"
     url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v2.5.1.tar.gz"
     sha256 = "cc85657899c50dac03b18f61e34d27aa7cddfe33c089297e6f23cdeb275c5e9a"
 
-    autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_forgejo_release"
 
     [resources.system_user]
 
