@@ -26,7 +26,7 @@ Blogging platform, designed for personal use
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/pureblog)](https://ci-apps.yunohost.org/ci/apps/pureblog/)
 
-🛠️ Upstream PureBlog repository: <https://github.com/kevquirk/pureblog/>
+🛠️ Upstream PureBlog repository: <https://codeberg.org/kevquirk/pureblog>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/pureblog_ynh/tree/testing).
 
