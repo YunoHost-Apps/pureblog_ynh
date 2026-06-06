@@ -7,7 +7,7 @@ name = "PureBlog"
 description.en = "Blogging platform, designed for personal use"
 description.fr = "Plateforme de blog, conçue pour un usage personnel"
 
-version = "3.2.1~ynh1"
+version = "3.4.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -56,8 +56,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://codeberg.org/kevquirk/pureblog/archive/v3.2.1.tar.gz"
-    sha256 = "c2f3bb893cbdb6e530702839aaf33bd8f880d29589c3b91d68a610424cb268fd"
+    url = "https://codeberg.org/kevquirk/pureblog/archive/v3.4.0.tar.gz"
+    sha256 = "3657f02a3c147ec39e1ba27c651fa9e35aa8c24064a708f5bbf6be6e918b7028"
 
     autoupdate.strategy = "latest_forgejo_release"
 
