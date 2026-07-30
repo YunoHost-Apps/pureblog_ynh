@@ -13,10 +13,10 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "LicenseRef-Pure-Blog-1"
-license_url = "https://codeberg.org/kevquirk/pureblog/src/branch/main/LICENSE.md"
+license_url = "https://github.com/kevquirk/pureblog/blob/main/LICENSE.md"
 website = "https://pureblog.org/"
 admindoc = "https://pureblog.org/docs"
-code = "https://codeberg.org/kevquirk/pureblog"
+code = "https://github.com/kevquirk/pureblog"
 
 [integration]
 yunohost = ">= 12.1.39"
@@ -34,22 +34,10 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-
-    #[install.path]
-    #type = "path"
-    #default = "/pureblog"
-
+    
     [install.init_main_permission]
     type = "group"
     default = "visitors"
-
-    #[install.admin]
-    #type = "user"
-
-    #[install.password]
-    #help.en = "Use the help field to add an information for the admin about this question."
-    #help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    #type = "password"
 
 [resources]
 
@@ -59,7 +47,7 @@ ram.runtime = "50M"
     url = "https://codeberg.org/kevquirk/pureblog/archive/v3.6.2.tar.gz"
     sha256 = "b4c3ec34d4299005945716911190d3508438246cfb4dee4936b2ade6757aaf2b"
 
-    autoupdate.strategy = "latest_forgejo_release"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
