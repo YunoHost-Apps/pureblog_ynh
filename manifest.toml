@@ -7,16 +7,16 @@ name = "PureBlog"
 description.en = "Blogging platform, designed for personal use"
 description.fr = "Plateforme de blog, conçue pour un usage personnel"
 
-version = "2.5.0~ynh1"
+version = "3.8.0~ynh1"
 
 maintainers = ["eric_G"]
 
 [upstream]
 license = "LicenseRef-Pure-Blog-1"
-license_url = "https://github.com/kevquirk/pureblog/?tab=License-1-ov-file"
+license_url = "https://github.com/kevquirk/pureblog/blob/main/LICENSE.md"
 website = "https://pureblog.org/"
 admindoc = "https://pureblog.org/docs"
-code = "https://github.com/kevquirk/pureblog/"
+code = "https://github.com/kevquirk/pureblog"
 
 [integration]
 yunohost = ">= 12.1.39"
@@ -68,10 +68,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v2.5.0.tar.gz"
-    sha256 = "928794a1b7e0e81da2940b688d3ec0319dfab9fd8f539b997597eac1b5bb66dc"
+    url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v3.8.0.tar.gz"
+    sha256 = "f84400159e7f5e4696f24c8f537b7df7613c0c5b9c9f97e8b7e59b2ec5f84d1e"
 
-    autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
@@ -82,4 +82,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.5-mbstring, php8.5-curl, php8.5-zip"
+    packages = "php8.5-mbstring, php8.5-xml, php8.5-curl, php8.5-zip"
