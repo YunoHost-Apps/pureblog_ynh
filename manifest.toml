@@ -7,7 +7,7 @@ name = "PureBlog"
 description.en = "Blogging platform, designed for personal use"
 description.fr = "Plateforme de blog, conçue pour un usage personnel"
 
-version = "3.8.4~ynh1"
+version = "3.8.5~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -44,8 +44,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v3.8.4.tar.gz"
-    sha256 = "a867896bfa9288b64b804dae0c2aa87bfc0fa311752d385233dd157c51011b33"
+    url = "https://github.com/kevquirk/pureblog/archive/refs/tags/v3.8.5.tar.gz"
+    sha256 = "035faa6be836214aa0bb47638e6a32967645788d02d500054bdb8487449e8ca4"
 
     autoupdate.strategy = "latest_github_release"
 
